@@ -13,3 +13,8 @@ class Test(TestCase):
         expected = 'FEMALE'
         actual = convert_gender('f')
         self.assertEqual(actual, expected)
+
+    def test_convert_gender_for_others(self):
+        expected = 'UNKNOWN'
+        actual = convert_gender('k')
+        self.assertEqual(actual, expected)
